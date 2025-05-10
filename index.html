@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>FlixNet Colombia: Ve series online, ve películas online</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- ENCABEZADO -->
+    <header>
+      <h1 class="logo">FLIXNET</h1>
+      <div class="controls">
+        <select id="idioma" name="idioma">
+          <option value="es">Español</option>
+          <option value="en">Inglés</option>
+          <option value="ru">Ruso</option>
+        </select>
+        <button class="login-btn">Iniciar sesión</button>
+      </div>
+    </header>
+
+    <!-- HERO PRINCIPAL -->
+    <main class="hero">
+      <div class="hero-content">
+        <h1>Películas y series ilimitadas,<br> y mucho más.</h1>
+        <p>A partir de $18.900. Cancela cuando quieras.</p>
+        <div class="form-inline">
+          <input type="email" id="correo" name="correo" placeholder="Email">
+          <button class="start-btn">Comienza ahora</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ZONA DE CONTENIDO PRINCIPAL -->
+    <div class="zona-verde">
+      <div class="content-container">
+        <!-- TENDENCIAS -->
+        <div class="column">
+          <h3 class="section-title">Tendencias</h3>
+          <div id="carouselTendencias" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Interstellar.jpg" class="d-block w-100" alt="Tendencia1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Blade runner 2049.jpg" class="d-block w-100" alt="Tendencia2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Dune.jpg" class="d-block w-100" alt="Tendencia3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Titanes.jpg" class="d-block w-100" alt="Tendencia3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTendencias" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTendencias" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PLANES Y PROMOCIONES -->
+        <div class="column">
+          <h3 class="section-title">Planes</h3>
+          <div class="plans-container">
+            <div class="plan">
+              <h3>Plan Básico</h3>
+              <p>$18.900/mes</p>
+              <button class="plan-btn">Seleccionar</button>
+            </div>
+            <div class="plan">
+              <h3>Plan Estándar</h3>
+              <p>$24.900/mes</p>
+              <button class="plan-btn">Seleccionar</button>
+            </div>
+            <div class="plan">
+              <h3>Plan Premium</h3>
+              <p>$30.900/mes</p>
+              <button class="plan-btn">Seleccionar</button>
+            </div>
+            <div class="plan">
+              <h3>Plan Pro Premium</h3>
+              <p>$45.900/mes</p>
+              <button class="plan-btn">Seleccionar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRÓXIMAMENTE -->
+        <div class="column">
+          <h3 class="section-title">Próximamente</h3>
+          <div id="carouselComing" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Demon.jpg" class="d-block w-100" alt="Coming1">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Dr Doom.jpg" class="d-block w-100" alt="Coming2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Shk.jpg" class="d-block w-100" alt="Coming3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/The.jpg" class="d-block w-100" alt="Coming3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselComing" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselComing" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="more-reasons">
+        <h2>Más motivos para unirte</h2>
+        <div class="reasons-container">
+          <div class="reason-card">
+            <h3>Maratones sin juicio</h3>
+            <p>¿Te viste tres temporadas seguidas en pijama a las 3 a.m.? ¡Tranquilo! FlixNet no juzga... solo reproduce.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Botón mágico de “Repetir episodio”</h3>
+            <p>¿Te dormiste en medio del capítulo? Dale otra vez sin pena, aquí todos sabemos que el sueño ataca sin avisar.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Excusa válida para no salir</h3>
+            <p>“¿Salir? Uy no puedo, tengo FlixNet…” — y nadie te vuelve a molestar.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Películas raras que no sabías que existían, pero ahora amas</h3>
+            <p>¿Un drama coreano sobre fantasmas que hacen pan? FlixNet lo tiene. Y te engancha.</p>
+          </div>
+          <div class="reason-card">
+            <h3>Ideal para stalkear gustos ajenos</h3>
+            <p>¿Compartes cuenta? Podrás descubrir que tu tío ve telenovelas turcas mientras come empanadas.</p>
+          </div>
+          <div class="reason-card"> 
+            <h3>Ideal para practicar idiomas viendo series... con subtítulos que igual no lees.</h3>
+            <p>¡Pero igual suena a que estás estudiando! Tu profe estaría orgulloso (más o menos)..</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+   <main>
+    <footer class="flixnet-footer">
+      <div class="footer-top">
+        <p>¿Preguntas? Llama al <a href="tel:018009171564">01 800 917 1564</a></p>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Cuenta</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Relaciones con inversionistas</a></li>
+          <li><a href="#">Empleo</a></li>
+          <li><a href="#">Canjear tarjetas de regalo</a></li>
+          <li><a href="#">Comprar tarjetas de regalo</a></li>
+          <li><a href="#">Formas de ver</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Preferencias de cookies</a></li>
+          <li><a href="#">Información corporativa</a></li>
+          <li><a href="#">Contáctanos</a></li>
+          <li><a href="#">Prueba de velocidad</a></li>
+          <li><a href="#">Avisos legales</a></li>
+          <li><a href="#">Solo en FlixNet</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <label for="language-select">Selecciona el idioma</label>
+        <select id="language-select">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <p>FlixNet Colombia</p>
+        <p class="recaptcha-notice">
+          Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <a href="#">Más info</a>.
+        </p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
